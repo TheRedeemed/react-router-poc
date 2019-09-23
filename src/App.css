@@ -20,3 +20,21 @@
 .App-link {
   color: #09d3ac;
 }
+
+.SplitPane{
+  display: flex;
+  margin: 15px;
+  height: 700px;
+}
+
+.SplitPane-left {
+  background-color: #282c34;
+  width: 70%;
+  padding: 15px;
+}
+
+.SplitPane-right {
+  background-color: #61dafb;
+  width: 30%;
+  padding: 15px;
+}
