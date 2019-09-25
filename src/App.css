@@ -28,13 +28,17 @@
 }
 
 .SplitPane-left {
-  background-color: #282c34;
+  /*background-color: #282c34;*/
+  border: 2px solid #282c34;
+  border-radius: 15px;
   width: 70%;
   padding: 15px;
 }
 
 .SplitPane-right {
-  background-color: #61dafb;
+  /*background-color: #61dafb;*/
+  border: 2px solid #282c34;
+  border-radius: 15px;
   width: 30%;
   padding: 15px;
 }

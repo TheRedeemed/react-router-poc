@@ -28,8 +28,7 @@ const SearchContainer = () => {
     }
 
     return(
-        <Route exact path={'/search/:currentItem'} 
-               component={displayBasedOnItem} />
+        displayBasedOnItem()
     );
 }
 
