@@ -10,7 +10,7 @@ function App() {
     <Switch>
       <Route exact path='/' component={LoginFrom} />
       <Route path='/dashboard' component={DashboardContainer} />
-      <Route path='/search/:currentItem' component={SearchContainer} />
+      <Route path='/search/:currentItem' render={(props) => <SearchContainer {...props} />} />
     </Switch>
   );
 }

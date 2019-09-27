@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 import LoginHelpers from '../login/LoginHelpers';
 import SplitPane from '../layout/SplitPane';
 import FESearchContent from './FESearch/FESearchContent';
@@ -7,7 +6,7 @@ import FESearchSidebar from './FESearch/FESearchSidebar';
 import BESearchContent from './BESearch/BESearchContent';
 import BESearchSidebar from './BESearch/BESearchSidebar';
 
-const SearchContainer = () => {
+const SearchContainer = ({...props}) => {
 
     let currentItem;
 
@@ -16,7 +15,7 @@ const SearchContainer = () => {
         switch(currentItem) {
             case 'FE':
                 return <SplitPane 
-                            left = {<FESearchContent />}
+                            left = {<FESearchContent routeProps={props} />}
                             right = {<FESearchSidebar />} />
             case 'BE':
                 return <SplitPane 
